@@ -1,5 +1,5 @@
 // Ține interfața în telefon: se deschide instant și fără internet; se actualizează în fundal.
-const C = 'nal-v1';
+const C = 'nal-v9';
 const SHELL = ['./', './index.html', './icon-180.png', './icon-192.png', './manifest.webmanifest'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(C).then(c => c.addAll(SHELL))); self.skipWaiting(); });
 self.addEventListener('activate', e => {
